@@ -47,7 +47,7 @@
 
 **Fundamental Theorem:** $\int_a^b f(x)dx = F(b) - F(a)$
 
-**Area Between Curves:** $\int_a^b [top - bottom]dx$
+**Area Between Curves:** $\int_a^b [\text{top} - \text{bottom}]dx$
 
 # 🎓 IITM BS Foundation: Mathematics & Statistics Cheat Sheet
 
@@ -64,27 +64,23 @@
   * If $m=2$, the number of onto functions is: $2^n - 2$.
 * **Composition Domain ($f \circ g$):**
   $$
-  {f \circ g} = \{x \in D_g \mid g(x) \in D_f\}
-
+  f \circ g = \{x \in D_g \mid g(x) \in D_f\}
   $$
 * **Sum of Functions Domain:** For $f_1(x) + f_2(x)$, the domain is the intersection: $D_1 \cap D_2$.
 * **Logarithmic Identity:**
   $$
-  {\log_b c} = c^{\log_b a}
-
+  \log_b c = c^{\log_b a}
   $$
 
 ### 2. Calculus & Sequences
 
 * **Continuity at Point $c$:**
   $$
-  im_{x \to c^-} f(x) = \lim_{x \to c^+} f(x) = f(c)
-
+  \lim_{x \to c^-} f(x) = \lim_{x \to c^+} f(x) = f(c)
   $$
 * **Equation of Tangent Line:** At point $x_0$:
   $$
-  - f(x_0) = f'(x_0)(x - x_0)
-
+  f(x_0) = f'(x_0)(x - x_0)
   $$
 * **Limits of Sequences:**
   * For rational functions $\frac{P(n)}{Q(n)}$, if degrees are equal, the limit is the ratio of leading coefficients.
@@ -93,10 +89,9 @@
 ### 3. Coordinate Geometry (Parabolas)
 
 * **Standard Vertex Form:** $y = a(x - h)^2 + k$
-* **Suspension Bridge Problems:** If the vertex (lowest point) is at $(0, L_{min})$, the equation is:
+* **Suspension Bridge Problems:** If the vertex (lowest point) is at $(0, L_{\text{min}})$, the equation is:
   $$
-  = ax^2 + L_{min}
-
+  y = ax^2 + L_{\text{min}}
   $$
 
 ---
@@ -111,12 +106,10 @@
 * **Circular Arrangement:** For $n$ items, if one position is fixed: $(n-1)!$ ways.
 * **Bayes' Theorem:**
   $$
-  A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}
-
+  P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}
   $$
 
 ### 2. Common Probability Distributions
-
 
 | Distribution           | Mean$E[X]$      | Variance$Var(X)$     | Notes                        |
 | :----------------------- | :---------------- | :--------------------- | :----------------------------- |
@@ -130,23 +123,19 @@
 
 * **Markov’s Inequality:** For non-negative $X$ and $c > 0$:
   $$
-  X \ge c) \le \frac{E[X]}{c}
-
+  P(X \ge c) \le \frac{E[X]}{c}
   $$
 * **Chebyshev’s Inequality:**
   $$
-  |X - \mu| \ge k\sigma) \le \frac{1}{k^2}
-
+  P(|X - \mu| \ge k\sigma) \le \frac{1}{k^2}
   $$
 * **Central Limit Theorem (CLT):** For large $n$, the sample mean $\bar{X}$ approximates:
   $$
-  rac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0, 1)
-
+  \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0, 1)
   $$
 * **Sample Covariance:**
   $$
   {xy} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{n-1}
-
   $$
 
 ---

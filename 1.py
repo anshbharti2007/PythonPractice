@@ -1,29 +1,29 @@
-secret_word = "global"
-guessed_word = []
-attempts_left = 10
+secret_word = "global" # creating a variable for storing the secret word 
+guessed_word = [] # creating a variable and assigning a empty list for storing guessed word 
+attempts_left = 10 # created a variable for giving how many attempts are for guessing 
 
-while attempts_left > 0:
-    display = ""
+while attempts_left > 0: # looping until the attempt is greater than 0
+    display = "" # creating a variable for storing string of char which are correct in the word 
 
-    for letter in secret_word:
-        if letter in guessed_word:
-            display += letter + " "
-        else:
-            display += "_ "
+    for letter in secret_word: # looping through each char in secreat word
+        if letter in guessed_word: # conditioning if char in gussed word 
+            display += letter + " " # then add character and a blankspace 
+        else: # OR 
+            display += "_ " # if char not in the letter add a under score next to it 
 
-    print(f"\nWord to guess: {display}")
+    print(f"\nWord to guess: {display}") # print function print in new line and show the how many char are guessed
 
-    if "_" not in display:
-        print("LFG 🔥 You are insane at this man! Correct")
-        break
+    if "_" not in display: # if condition for if there is no underscore mean the word is guessed 
+        print("LFG 🔥 You are insane at this man! Correct") # print function for tell you have guessed 
+        break # breaks the while loop if condition met 
 
-    guess = input("Guess the letter: ").lower()
-    if len(guess) != 1:
-        print("Bro one letter at a time ! ")
-        continue
+    guess = input("Guess the letter: ").lower() #input variable for guess word 
+    if len(guess) != 1: # it will check if the guess is 1 char or not 
+        print("Bro one letter at a time ! ") # if greater than 1 char it will print 
+        continue #continue fucntion
 
     # Check repeated guess
-    if guess in guessed_word:
+    if guess in guessed_word: 
         print("You already guessed it 😭")
         continue
 

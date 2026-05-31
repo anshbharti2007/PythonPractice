@@ -176,14 +176,3 @@ def power_set(A):
 # ------------------------------------------------------------
 # STEP 8 — run everything
 # ------------------------------------------------------------
-
-if __name__ == "__main__":
-    set_operations(A, B, U)
-    cartesian_product(A, B)
-    R = build_relation(A, B)
-    inverse_relation(R)
-    power_set(A)
-
-    print("\n========== DONE ==========")
-    print("  Try changing A, B, U at the top of the file")
-    print("  and re-run. Does R change? Does |P(A)|?")
